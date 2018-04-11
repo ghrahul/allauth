@@ -51,5 +51,8 @@ framework==
      
    ![screenshot 129](https://user-images.githubusercontent.com/22416933/38641405-8912f8fe-3df4-11e8-8f29-7450454de91a.png)
 
+django administration
+
+![screenshot 131](https://user-images.githubusercontent.com/22416933/38641892-ec098486-3df5-11e8-9140-0fec792e528e.png)
 
     
