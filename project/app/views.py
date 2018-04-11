@@ -12,5 +12,6 @@ class Countrylist(APIView):
     def get(self,request):
         country = Country.objects.all()
         serializer = CountrySerializer(country,many=True)
-        return Response(serializer)
+        return Response(serializer.data)
+    
         
