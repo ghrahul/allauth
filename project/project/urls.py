@@ -23,8 +23,10 @@ from app import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include('allauth.urls')),
+    url(r'^country/(?P<pk>[0-9]+)/$', views.CountryDetail.as_view()),
     url(r'^country/', views.Countrylist.as_view()),
-    #url(r'^users/', views.ListUser.as_view()),
-
+    
+    
 
 ]
+urlpatterns = format_suffix_patterns(urlpatterns)
