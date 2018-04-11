@@ -34,21 +34,22 @@ framework==
      get==
      ![screenshot 127](https://user-images.githubusercontent.com/22416933/38641212-202f6458-3df4-11e8-9eb7-04e87b359bbf.png)
      
-     post==
+     
+   post==
      
      
-    ![screenshot 128](https://user-images.githubusercontent.com/22416933/38641347-5dfd4002-3df4-11e8-84aa-3bfc64959323.png)
+   ![screenshot 128](https://user-images.githubusercontent.com/22416933/38641347-5dfd4002-3df4-11e8-84aa-3bfc64959323.png)
 
    delete and put== http://127.0.0.1:8000/country/(give primary key number)/  (while locally hosted)
      delete==
      
      
-     ![screenshot 129](https://user-images.githubusercontent.com/22416933/38641405-8912f8fe-3df4-11e8-8f29-7450454de91a.png)
+   ![screenshot 129](https://user-images.githubusercontent.com/22416933/38641405-8912f8fe-3df4-11e8-8f29-7450454de91a.png)
      
      Put==
      
      
-     ![screenshot 129](https://user-images.githubusercontent.com/22416933/38641405-8912f8fe-3df4-11e8-8f29-7450454de91a.png)
+   ![screenshot 129](https://user-images.githubusercontent.com/22416933/38641405-8912f8fe-3df4-11e8-8f29-7450454de91a.png)
 
 
     
