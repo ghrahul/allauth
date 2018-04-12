@@ -5,10 +5,12 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .models import Country
-from .serialzers import CountrySerializer
+from .serialzers import CountrySerializer, UserSerializer, GroupSerializer
 from rest_framework import authentication, permissions
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
 from django.http import Http404
+from rest_framework import viewsets
+
 # Create your views here.
 
 class Countrylist(APIView):
@@ -48,6 +50,18 @@ class CountryDetail(APIView):
         countrypk = self.get_object(pk)
         countrypk.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+class UserViewSet(viewsets.ModelViewSet):
+   
+    queryset = User.objects.all().order_by('-date_joined')
+    serializer_class = UserSerializer
+
+class GroupViewSet(viewsets.ModelViewSet):
+    
+    queryset = Group.objects.all()
+    serializer_class = GroupSerializer
+
+
         
            
 
