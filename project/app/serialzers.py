@@ -10,7 +10,14 @@ class CountrySerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ('url', 'username', 'email', 'password', 'groups')
+        fields = [
+            'url', 'username', 'email', 'password'
+        ]
+
+        extra_kwargs = {
+            "password": {"write_only": True},
+        }
+        
 
 
 
