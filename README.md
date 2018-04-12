@@ -14,15 +14,35 @@ signup funtionality == http://127.0.0.1:8000/accounts/signup/ (while locally hos
 Also there are other functionalities like password reset email confirmation.
 
 --
-
+userlist api--
 --api for users data communication
 
-framework design
-  Model==
-      from django.db import models
-     from django.db import models
-    # This is an example model
 
+get functionality--
+
+![screenshot 141](https://user-images.githubusercontent.com/22416933/38683941-3017eb18-3e8c-11e8-98cf-c1e6c897210c.png)
+
+
+post functionality--
+
+![screenshot 147](https://user-images.githubusercontent.com/22416933/38684268-ee4078da-3e8c-11e8-898b-f6009b5ba466.png)
+
+delete functionality--
+
+![screenshot 146](https://user-images.githubusercontent.com/22416933/38684130-a4db174a-3e8c-11e8-9d49-63d5d3836a8b.png)
+
+put functionality--
+
+![screenshot 145](https://user-images.githubusercontent.com/22416933/38684097-8f2c8c94-3e8c-11e8-8fcd-34bd0d785189.png)
+
+
+
+framework design
+  Model==# This is an example model where i have implemented all the functions(get,put,post,delete) explicitly
+      
+    
+      from django.db import models
+      from django.db import models
       class Country(models.Model):
           name = models.CharField(max_length=20)
           capital = models.CharField(max_length=20)
