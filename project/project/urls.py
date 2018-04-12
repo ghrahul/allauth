@@ -25,15 +25,15 @@ from rest_framework import routers
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
-router.register(r'groups', views.GroupViewSet)
+
 
 
 
 urlpatterns = [
-    #url(r'^admin/', admin.site.urls),
-    #url(r'^accounts/', include('allauth.urls')),
-    #url(r'^country/(?P<pk>[0-9]+)/$', views.CountryDetail.as_view()),
-    #url(r'^country/', views.Countrylist.as_view()),
+    url(r'^admin/', admin.site.urls),
+    url(r'^accounts/', include('allauth.urls')),
+    url(r'^country/(?P<pk>[0-9]+)/$', views.CountryDetail.as_view()),
+    url(r'^country/', views.Countrylist.as_view()),
     
     url(r'^', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
