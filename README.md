@@ -14,10 +14,13 @@ signup funtionality == http://127.0.0.1:8000/accounts/signup/ (while locally hos
 Also there are other functionalities like password reset email confirmation.
 
 --
+
+--api for users data communication
+
 framework design
   Model==
       from django.db import models
-
+     from django.db import models
     # This is an example model
 
       class Country(models.Model):
